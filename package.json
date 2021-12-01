@@ -1,0 +1,27 @@
+{
+    "name": "music-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node index.js",
+        "fix": "run-s fix:*",
+        "fix:eslint": "eslint --fix *.js",
+        "fix:prettier": "prettier --loglevel warn --write .",
+        "lint": "run-s lint:*",
+        "lint:eslint": "eslint *.js",
+        "lint:prettier": "prettier --check ."
+    },
+    "dependencies": {
+        "@discordjs/builders": "^0.7.0",
+        "@discordjs/rest": "^0.1.0-canary.0",
+        "discord-api-types": "^0.24.0",
+        "discord.js": "^13.2.0",
+        "dotenv": "^10.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.0.1",
+        "eslint-config-prettier": "^8.3.0",
+        "prettier": "^2.4.1"
+    }
+}
